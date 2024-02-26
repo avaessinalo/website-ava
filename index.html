@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>História da Arquitetura e das Artes</title>
+</head>
+<body>
+    <div class="quiz-header">
+        <h1>História da Arquitetura e das Artes</h1>
+    </div>
+    <div class="quiz-container">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="timer"></div>
+        <button onclick="checkAnswer()">Responder</button>
+        <button id="restart-button" onclick="restartGame()" style="display: none;">Reiniciar</button>
+    </div>
+    <div class="popup-container" id="popup-container">
+        <div class="popup animate__animated" id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">Continuar</button>
+        </div>
+    </div>
+    <div class="restart-popup-container" id="restart-popup-container">
+        <div class="popup" id="restart-popup">
+            <p id="restart-popup-message"></p>
+            <button onclick="restartGame()">Reiniciar</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Happy Essinalo. Todos os direitos reservados. Este jogo foi criado com fins educacionais.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
